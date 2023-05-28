@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Temperature Converter</h1>
+
+  <div class="converter">
+    <label for="celsius">Celsius: </label>
+    <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+    <div class="conversion-buttons">
+      <button onclick="convertTemperature('Celsius', 'Fahrenheit')">Convert to Fahrenheit</button>
+      <button onclick="convertTemperature('Celsius', 'Kelvin')">Convert to Kelvin</button>
+      <button onclick="convertTemperature('Celsius', 'Rankine')">Convert to Rankine</button>
+    </div>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
